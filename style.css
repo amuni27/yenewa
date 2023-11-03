@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 10vh;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-color: darkolivegreen;
+    border-bottom-style: solid;
+}
+
+.photo-container {
+    height: 40vw;
+    background-color: #8D1E2C;
+}
+
+.wedding-photo {
+    height: 40vw;
+
+}
+
+.logo {
+    position: absolute;
+    left: 20%;
+    top: 2%;
+    width: 5%;
+}
+
+.love-description {
+    display: inline;
+    font-family: Nyala, serif;
+    position: absolute;
+    margin-top: 15%;
+    font-size: 4vw;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+
+}
+
+.middle-container {
+    display: flex;
+    flex-direction: row;
+}
+.middle-container .column{
+    background-color: darkolivegreen;
+}
+
+.middle-container .column .card {
+    width: 500px;
+    background-color: #8D1E2C;
+    border-radius: 12px;
+    margin: 4px;
+}
+
+
+
+.decoration-size1{
+    height: 800px;
+}
+
+.decoration-size2{
+    height: 500px;
+}
+
+.decoration-size3{
+    height: 250px;
+}
+
+
+
+#image-three{
+    width: 500px;
+    height: 500px;
+    border-radius: 12px;
+}
+#image-two{
+    width: 500px;
+    height: 800px;
+    border-radius: 12px;
+}
+#image-one{
+    width: 500px;
+    height: 250px;
+    border-radius: 12px;
+}
+
