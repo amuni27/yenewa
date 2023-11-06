@@ -75,7 +75,7 @@ nav {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 50px;
+    padding-top: 0; /* Adjust as needed to control modal positioning */
     left: 0;
     top: 0;
     width: 100%;
@@ -97,12 +97,17 @@ nav {
 
 /* Styles for the image inside the modal */
 .modal-content {
-    display: block;
-    margin: 0 auto;
-    max-width: 80%;
-    max-height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
+/* Styles for the image inside the modal */
+.modal-img {
+    max-width: 80%; /* Limit the maximum width of the image */
+    max-height: 80%; /* Limit the maximum height of the image */
+}
 
 .img-decoration {
     position: relative;
