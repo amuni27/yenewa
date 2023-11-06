@@ -112,7 +112,8 @@ nav {
 
 /* Zoom effect when the image is hovered or clicked */
 #img01:hover,
-#img01:active {
+#img01:active,
+#img01:focus {
     transform: scale(2.2); /* Zoom in the image to 120% of its original size */
     cursor: zoom-out; /* Change the cursor to indicate it's zoomed in (click to zoom out) */
 }
