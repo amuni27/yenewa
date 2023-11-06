@@ -4,6 +4,8 @@ body {
 }
 
 header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
     height: 10vh;
     background-color: white;
     border-bottom-width: 1px;
@@ -11,42 +13,98 @@ header {
     border-bottom-style: solid;
 }
 
+.logo {
+    height: inherit;
+
+}
+ul{
+    list-style: none;
+}
+li{
+    font-family: Nyala, serif;
+    font-size: 1vw;
+    font-weight: 200;
+    display: inline;
+    margin-right: 50px;
+}
+li>a{
+    text-decoration: none;
+    color: #8D1E2CFF;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
 .photo-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     height: 40vw;
     background-color: #8D1E2C;
 }
 
 .wedding-photo {
     height: 40vw;
-
 }
 
-.logo {
-    position: absolute;
-    left: 20%;
-    top: 2%;
-    width: 5%;
-}
+
 
 .love-description {
-    display: inline;
     font-family: Nyala, serif;
-    position: absolute;
-    margin-top: 15%;
-    font-size: 4vw;
+    font-size: 2vw;
+    font-weight: 200;
+    margin-top: 50%;
     color: white;
-    font-weight: 300;
     text-align: center;
 
 }
 
 .gallery-container {
+    margin-left: 14%;
+    margin-right: 14%;
     margin-top: 100px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-.img-decoration {
-    border-radius: 12px;
-    margin-left: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px;
 }
 
+.img-decoration {
+    position: relative;
+    right: 0;
+    border-radius: 12px;
+}
+
+
+@media (max-width: 980px) {
+    .img-decoration {
+        width: 300px;
+        border-radius: 12px;
+    }
+    .gallery-container {
+        margin-left: 4%;
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0px;
+    }
+    ul {
+        display: none; /* Hide the list on small screens */
+    }
+
+    /* Add a button for the mobile menu (hamburger icon) */
+    .menu-button {
+        display: block;
+        background-color: #333;
+        color: #8D1E2CFF;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 980px) {
+    .menu-button {
+        display: none;
+    }
+}
