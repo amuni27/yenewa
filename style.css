@@ -40,50 +40,13 @@ header {
 
 }
 
-.middle-container {
-    display: flex;
-    flex-direction: row;
+.gallery-container {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-.middle-container .column{
-    background-color: darkolivegreen;
-}
-
-.middle-container .column .card {
-    width: 500px;
-    background-color: #8D1E2C;
+.img-decoration {
     border-radius: 12px;
-    margin: 4px;
-}
-
-
-
-.decoration-size1{
-    height: 800px;
-}
-
-.decoration-size2{
-    height: 500px;
-}
-
-.decoration-size3{
-    height: 250px;
-}
-
-
-
-#image-three{
-    width: 500px;
-    height: 500px;
-    border-radius: 12px;
-}
-#image-two{
-    width: 500px;
-    height: 800px;
-    border-radius: 12px;
-}
-#image-one{
-    width: 500px;
-    height: 250px;
-    border-radius: 12px;
+    margin-left: 10px;
 }
 
